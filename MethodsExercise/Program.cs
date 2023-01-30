@@ -5,7 +5,7 @@ namespace MethodsExercise
 {
     public class Program
     {
-        public static int Subtraction(int num1, int num2 )
+        public static int Subtraction(int num1, int num2)
         {
             return num1 - num2;
         }
@@ -17,7 +17,7 @@ namespace MethodsExercise
         {
             return num1 * num2;
         }
-        public static double division(int num1, int num2)
+        public static double Division(int num1, int num2)
         {
             return num1 / num2;
         }
@@ -43,8 +43,25 @@ namespace MethodsExercise
             Console.WriteLine();
 
             Console.WriteLine($"Once upon a time {userName} was walking in the park with {petname}. when they came across {bffName}, they sat and rambled on for hours before realizing that they were both going to be late for work at {Work}. So {userName} ran home as fast as they could and got ready for work to bad {userName} didn't make it on time.");
-                Console.WriteLine();
-            
+            Console.WriteLine();
+
+
+            Console.WriteLine("Hey thanks for sticking around! lets try some calculations. Lets figure out how old you are what is the current year?");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("what is your birth year?");
+            int num2 = int.Parse(Console.ReadLine());
+
+            int sub = Subtraction(num1, num2);
+
+            Console.WriteLine($"With that information I can tell you that you are {sub}years old. Congradulations!!");
+
+
+
+
+
+
+
 
             // math calculations
             int result = Subtraction(10, 5);
@@ -56,15 +73,15 @@ namespace MethodsExercise
             int result3 = Addition(10, 5);
             Console.WriteLine(result3);
 
-            double result4 = division(10, 5);
+            double result4 = Division(10, 5);
             Console.WriteLine(result4);
 
             int result5 = Modulous(10, 5);
             Console.WriteLine(result5);
 
-                
-            
-            
+
+
+
         }
         /*
         public static int Subtraction(params int[] results)
@@ -74,10 +91,10 @@ namespace MethodsExercise
         }
         */
         // This is a close as I could get to understanding the Params Keyword
-        
-        }
-
-        
 
     }
+
+
+
 }
+
